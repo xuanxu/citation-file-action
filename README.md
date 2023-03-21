@@ -39,7 +39,6 @@ jobs:
         uses: xuanxu/citation-file-action@main
         with:
           citation_file_path: ${{ steps.generate-files.outputs.citation_file_path}}
-          paper_doi: ${{steps.deposit.outputs.paper_doi}}
           reviews_repo: openjournals/joss-reviews
           issue_id: ${{ github.event.inputs.issue_id }}
           gh_token: ${{ secrets.GITHUB_TOKEN }}
