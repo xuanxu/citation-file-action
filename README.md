@@ -38,7 +38,6 @@ jobs:
       - name: Citaion
         uses: xuanxu/citation-file-action@main
         with:
-          journal_name: "TEST JOURNAL"
           citation_file_path: ${{ steps.generate-files.outputs.citation_file_path}}
           paper_doi: ${{steps.deposit.outputs.paper_doi}}
           reviews_repo: openjournals/joss-reviews
