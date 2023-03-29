@@ -38,7 +38,7 @@ begin
       system("gh issue comment #{ENV['ISSUE_ID']} --body-file citation_info_msg.txt")
     end
   else
-    system("echo 'No citation .cff file found at #{citation_file_path}'")
+    system("echo 'No citation .cff file found #{citation_file_path}'")
   end
 
 rescue Exception => e
