@@ -29,7 +29,8 @@ runs:
         GITHUB_TOKEN: ${{ inputs.gh_token }}
         GH_REPO: ${{ inputs.reviews_repo }}
       run: |
-        bundle exec ruby ${{ github.action_path }}/citation_info.rb
+        ruby -v
+        ruby ${{ github.action_path }}/citation_info.rb
 branding:
   icon: message-circle
   color: blue
