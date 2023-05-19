@@ -19,7 +19,7 @@ runs:
     - name: Install Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.2.1
+        ruby-version: 3.2.2
         working-directory: ${{ github.action_path }}
     - name: Comment with the citation file code
       shell: bash
